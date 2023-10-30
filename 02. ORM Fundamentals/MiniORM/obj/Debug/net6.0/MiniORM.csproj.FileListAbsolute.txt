@@ -1,0 +1,12 @@
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\bin\Debug\net6.0\MiniORM.deps.json
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\bin\Debug\net6.0\MiniORM.dll
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\bin\Debug\net6.0\MiniORM.pdb
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.csproj.AssemblyReference.cache
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.AssemblyInfoInputs.cache
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.AssemblyInfo.cs
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.csproj.CoreCompileInputs.cache
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.dll
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\refint\MiniORM.dll
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\MiniORM.pdb
+C:\Education\Entity-Framework-Core\02. ORM Fundamentals\MiniORM\obj\Debug\net6.0\ref\MiniORM.dll
