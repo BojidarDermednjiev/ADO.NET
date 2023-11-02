@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Sm9scho+SrIo0FA1lrmuCOp4sCwP+f2oSZjksTMC1bgT7jnJYI3TWQJ/fP7Ps0LZGQQwWSy5MWEEsMM21GNpg==",
+  "dgSpecHash": "hJbMCSRfr3tW0RhQCqxCmrGPZ28k05PFO0e0ZgihAjeXUKNFzWPZnQKGfT6pY6ik8bqIUHsM1bzlV+1fSwo0Jw==",
   "success": true,
-  "projectFilePath": "C:\\Education\\Entity-Framework-Core\\01. Entity Framework Introduction\\02. Database First\\02. Database First.csproj",
+  "projectFilePath": "C:\\Education\\Entity-Framework-Core\\01. ADO.NET\\02. Database First\\02. Database First.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bozhi\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\bozhi\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

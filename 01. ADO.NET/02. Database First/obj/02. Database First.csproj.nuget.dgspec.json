@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Education\\Entity-Framework-Core\\01. Entity Framework Introduction\\02. Database First\\02. Database First.csproj": {}
+    "C:\\Education\\Entity-Framework-Core\\01. ADO.NET\\02. Database First\\02. Database First.csproj": {}
   },
   "projects": {
-    "C:\\Education\\Entity-Framework-Core\\01. Entity Framework Introduction\\02. Database First\\02. Database First.csproj": {
+    "C:\\Education\\Entity-Framework-Core\\01. ADO.NET\\02. Database First\\02. Database First.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Education\\Entity-Framework-Core\\01. Entity Framework Introduction\\02. Database First\\02. Database First.csproj",
+        "projectUniqueName": "C:\\Education\\Entity-Framework-Core\\01. ADO.NET\\02. Database First\\02. Database First.csproj",
         "projectName": "02. Database First",
-        "projectPath": "C:\\Education\\Entity-Framework-Core\\01. Entity Framework Introduction\\02. Database First\\02. Database First.csproj",
+        "projectPath": "C:\\Education\\Entity-Framework-Core\\01. ADO.NET\\02. Database First\\02. Database First.csproj",
         "packagesPath": "C:\\Users\\bozhi\\.nuget\\packages\\",
-        "outputPath": "C:\\Education\\Entity-Framework-Core\\01. Entity Framework Introduction\\02. Database First\\obj\\",
+        "outputPath": "C:\\Education\\Entity-Framework-Core\\01. ADO.NET\\02. Database First\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bozhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
