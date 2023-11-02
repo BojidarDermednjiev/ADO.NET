@@ -13,6 +13,8 @@
 
             await connection.OpenAsync();
 
+            Console.WriteLine("successfull");
+
         }
         static async Task<string> GetAllVillainsWithTheirMinionsAsync(SqlConnection connection)
         {
