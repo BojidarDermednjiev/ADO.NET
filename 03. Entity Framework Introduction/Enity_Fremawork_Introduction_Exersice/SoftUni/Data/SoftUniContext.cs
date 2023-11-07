@@ -22,13 +22,13 @@
         public virtual DbSet<Employee> Employees { get; set; } = null!;
         public virtual DbSet<Project> Projects { get; set; } = null!;
         public virtual DbSet<Town> Towns { get; set; } = null!;
-        public DbSet<EmployeeProject> EmployeesProject { get; set; } = null!;
+        public DbSet<EmployeeProject> EmployeesProjects { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=SoftUni;Integrated Security=True;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer(@"../../String_Connection.txt");
             }
         }
 
