@@ -13,6 +13,10 @@
 
         public string Name { get; set; }
 
+<<<<<<< HEAD
         public virtual ICollection<BookCategory> CategoryBooks { get; set; }
+=======
+        public ICollection<BookCategory> CategoryBooks { get; set; }
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
     }
 }

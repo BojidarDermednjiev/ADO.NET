@@ -29,8 +29,14 @@ namespace BookShop.Models
         public AgeRestriction AgeRestriction { get; set; }
 
         public int AuthorId { get; set; }
+<<<<<<< HEAD
         public virtual Author Author { get; set; }
 
         public  virtual ICollection<BookCategory> BookCategories { get; set; }
+=======
+        public Author Author { get; set; }
+
+        public ICollection<BookCategory> BookCategories { get; set; }
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
     }
 }

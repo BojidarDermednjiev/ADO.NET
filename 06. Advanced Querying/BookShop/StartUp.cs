@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Text;
 using BookShop.Models;
 using Microsoft.EntityFrameworkCore;
@@ -8,11 +9,18 @@ namespace BookShop
 
     using Data;
     using Models.Enums;
+=======
+﻿namespace BookShop
+{
+    using Data;
+    using Initializer;
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
 
     public class StartUp
     {
         public static void Main()
         {
+<<<<<<< HEAD
             using var dbContext = new BookShopContext();
             Stopwatch sw = new Stopwatch();
             sw.Start();
@@ -189,6 +197,11 @@ namespace BookShop
         //public static int RemoveBooks(BookShopContext context)
         //{
         //}
+=======
+            using var db = new BookShopContext();
+            DbInitializer.ResetDatabase(db);
+        }
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
     }
 }
 

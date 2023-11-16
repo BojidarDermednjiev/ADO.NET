@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿namespace BookShop.Data
+=======
+﻿using System.Reflection;
+
+namespace BookShop.Data
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
 {
     using Microsoft.EntityFrameworkCore;
 
@@ -6,7 +12,10 @@
     using EntityConfiguration;
     using System.Collections.Generic;
     using System.Reflection.Emit;
+<<<<<<< HEAD
     using System.Reflection;
+=======
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
 
     public class BookShopContext : DbContext
     {
@@ -27,9 +36,13 @@
         {
             if (!optionsBuilder.IsConfigured)
             {
+<<<<<<< HEAD
                 optionsBuilder
                     .UseSqlServer(Configuration.ConnectionString)
                     .UseLazyLoadingProxies();
+=======
+                optionsBuilder.UseSqlServer(Configuration.ConnectionString);
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
             }
         }
 

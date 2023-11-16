@@ -9,7 +9,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+<<<<<<< HEAD
     <PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="6.100.0.5" />
+=======
+>>>>>>> 213b3d268ce47892be7f97dcc60892da38918cb6
   </ItemGroup>
 
   <ItemGroup>
