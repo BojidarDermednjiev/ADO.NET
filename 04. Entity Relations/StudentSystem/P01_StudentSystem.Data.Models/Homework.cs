@@ -1,5 +1,7 @@
-﻿namespace P01_StudentSystem.Data.Models
+﻿
+namespace P01_StudentSystem.Data.Models
 {
+    using Microsoft.EntityFrameworkCore;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,6 +11,7 @@
         [Key]
         public int HomeworkId { get; set; }
 
+        [Unicode(false)]
         public string? Content { get; set; }
 
         public ContentType ContentType { get; set; }

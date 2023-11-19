@@ -1,6 +1,10 @@
-﻿namespace P01_StudentSystem.Data.Models
+﻿
+namespace P01_StudentSystem.Data.Models
 {
     using System.ComponentModel.DataAnnotations;
+    using Microsoft.EntityFrameworkCore;
+
+    using Common;
 
     public class Course
     {
@@ -13,7 +17,12 @@
 
         [Key]
         public int CourseId { get; set; }
+
+        [Unicode]
+        [MaxLength(ValidationConstants.MaxLengthCourseName)]
         public string Name { get; set; } = null!;
+
+        [Unicode(false)]
         public string? Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
