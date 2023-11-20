@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 ﻿namespace P01_StudentSystem.Data.Models
+=======
+﻿
+namespace P01_StudentSystem.Data.Models
+>>>>>>> 3de2fc7a089a91fbf62f41a83e6d4d80fc4ab88d
 {
     using Microsoft.EntityFrameworkCore;
     using System.ComponentModel.DataAnnotations;
@@ -10,10 +15,17 @@
         [Key]
         public int HomeworkId { get; set; }
 
+<<<<<<< HEAD
         [Unicode(false)] 
         public string Content { get; set; } = null!;
 
         public  ContentType ContentType { get; set; }
+=======
+        [Unicode(false)]
+        public string? Content { get; set; }
+
+        public ContentType ContentType { get; set; }
+>>>>>>> 3de2fc7a089a91fbf62f41a83e6d4d80fc4ab88d
 
         public DateTime SubmissionTime { get; set; }
 

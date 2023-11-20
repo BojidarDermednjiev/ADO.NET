@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
       <PrivateAssets>all</PrivateAssets>
@@ -22,4 +23,6 @@
     <ProjectReference Include="..\P01_StudentSystem.Data\P01_StudentSystem.Data.csproj" />
   </ItemGroup>
 
+=======
+>>>>>>> 3de2fc7a089a91fbf62f41a83e6d4d80fc4ab88d
 </Project>
