@@ -3,7 +3,7 @@
     public class ExportOrderedCustomersDto
     {
         public string CustomerName { get; set; } = null!;
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; } = null!;
         public bool IsYoungDriver { get; set; }
     }
 }

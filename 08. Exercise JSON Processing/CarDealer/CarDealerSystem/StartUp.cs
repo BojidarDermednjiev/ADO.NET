@@ -1,24 +1,24 @@
-﻿using AutoMapper.QueryableExtensions;
-using CarDealerSystem.DTOs.Export;
-using CarDealerSystem.DTOs.Import;
-using CarDealerSystem.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace CarDealerSystem
+﻿namespace CarDealerSystem
 {
-    using AutoMapper;
     using Data;
+    using AutoMapper;
     using Newtonsoft.Json;
+    using Microsoft.EntityFrameworkCore;
+    using AutoMapper.QueryableExtensions;
+
+    using Models;
+    using DTOs.Export;
+    using DTOs.Import;
 
     public class StartUp
     {
-        static void Main()
+        private static void Main()
         {
             CarDealerContext context = new CarDealerContext();
             //string inputJSON = File.ReadAllText(@"../../../Datasets/sales.json");
             //context.Database.EnsureDeleted();
             //context.Database.EnsureCreated();
-            string output = GetOrderedCustomers(context);
+            string output = GetLocalSuppliers(context);
             Console.WriteLine(output);
         }
         public static string ImportSuppliers(CarDealerContext context, string inputJson)
@@ -107,7 +107,6 @@ namespace CarDealerSystem
             context.SaveChanges();
             return $"Successfully imported {sales.Count}.";
         }
-
         public static string GetOrderedCustomers(CarDealerContext context)
         {
             IMapper mapper = CreateMapper();
@@ -120,17 +119,34 @@ namespace CarDealerSystem
 
             return JsonConvert.SerializeObject(customersDtos, Formatting.Indented);
         }
+        public static string GetCarsFromMakeToyota(CarDealerContext context)
+        {
+            IMapper mapper = CreateMapper();
+            ExportCarToyotaDto[] carToyotaDtos = context.Cars
+                .Where(c => c.Make == "Toyota")
+                .OrderBy(c => c.Model)
+                .ThenByDescending(c => c.TraveledDistance)
+                .AsNoTracking()
+                .ProjectTo<ExportCarToyotaDto>(mapper.ConfigurationProvider)
+                .ToArray();
 
-        //public static string GetCarsFromMakeToyota(CarDealerContext context)
-        //{
-        //}
+            return JsonConvert.SerializeObject(carToyotaDtos, Formatting.Indented);
+        }
 
-        //public static string GetLocalSuppliers(CarDealerContext context)
-        //{
-        //}
+        public static string GetLocalSuppliers(CarDealerContext context)
+        {
+            IMapper mapper = CreateMapper();
+            ExportLocalSuppliersDto[] localSuppliersDtos = context.Suppliers
+                .Where(s => !s.IsImporter)
+                .AsNoTracking()
+                .ProjectTo<ExportLocalSuppliersDto>(mapper.ConfigurationProvider)
+                .ToArray();
+            return JsonConvert.SerializeObject(localSuppliersDtos, Formatting.Indented);
+        }
 
         //public static string GetCarsWithTheirListOfParts(CarDealerContext context)
         //{
+
         //}
 
         //public static string GetTotalSalesByCustomer(CarDealerContext context)

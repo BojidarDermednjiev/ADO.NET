@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarDealerSystem.Migrations
 {
     [DbContext(typeof(CarDealerContext))]
-    [Migration("20231123124849_Initial")]
+    [Migration("20231123182342_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,6 +58,9 @@ namespace CarDealerSystem.Migrations
 
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsYoungDriver")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
