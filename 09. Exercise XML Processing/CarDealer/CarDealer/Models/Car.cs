@@ -1,7 +1,16 @@
 ﻿namespace CarDealer.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class Car
     {
+        public Car()
+        {
+            this.Sales = new HashSet<Sale>();
+            this.PartsCars = new HashSet<PartCar>();
+        }
+
+        [Key]
         public int Id { get; set; }
 
         public string Make { get; set; } = null!;
@@ -10,8 +19,8 @@
 
         public long TraveledDistance { get; set; }
 
-        public ICollection<Sale> Sales { get; set; } = new List<Sale>();    
+        public virtual ICollection<Sale> Sales { get; set; } = null!;
 
-        public ICollection<PartCar> PartsCars { get; set; } = new List<PartCar>();
+        public virtual ICollection<PartCar> PartsCars { get; set; } = null!;
     }
 }
