@@ -5,6 +5,10 @@
 
     using Models;
     using Models.Enum;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
     class BookGenerator
     {
         #region Book Description
@@ -222,9 +226,15 @@
 
             Book[] books = new Book[bookCount];
 
+<<<<<<< HEAD
             for (int i = 0; i < bookCount; i++)
             {
                 string[] bookTokens = booksInput[i].Split();
+=======
+            for (int currentBook = 0; currentBook < bookCount; currentBook++)
+            {
+                string[] bookTokens = booksInput[currentBook].Split();
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
 
                 int edition = int.Parse(bookTokens[0]);
                 DateTime releaseDate = DateTime.ParseExact(bookTokens[1], "d/M/yyyy", CultureInfo.InvariantCulture);
@@ -232,8 +242,13 @@
                 decimal price = decimal.Parse(bookTokens[3]);
                 int ageRestriction = int.Parse(bookTokens[4]);
                 string title = String.Join(" ", bookTokens, 5, bookTokens.Length - 5);
+<<<<<<< HEAD
                 Category category = categories[i / 10];
                 Author author = authors[i / 5];
+=======
+                Category category = categories[currentBook / 10];
+                Author author = authors[currentBook / 5];
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
 
                 Book book = new Book()
                 {
@@ -247,7 +262,11 @@
                     Author = author,
                 };
 
+<<<<<<< HEAD
                 BookCategory bookCategory = new BookCategory()
+=======
+                BookCategory bookCategory = new BookCategory
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
                 {
                     Category = category,
                     Book = book
@@ -255,7 +274,11 @@
 
                 book.BookCategories.Add(bookCategory);
 
+<<<<<<< HEAD
                 books[i] = book;
+=======
+                books[currentBook] = book;
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
             }
 
             return books;

@@ -1,10 +1,10 @@
-﻿using BookShop.Models.Enums;
-
-namespace BookShop.Initializer.Generators
+﻿namespace BookShop.Initializer.Generators
 {
-    using BookShop.Models;
     using System;
     using System.Globalization;
+
+    using Models;
+    using Models.Enum;
 
     class BookGenerator
     {
@@ -223,9 +223,9 @@ namespace BookShop.Initializer.Generators
 
             Book[] books = new Book[bookCount];
 
-            for (int i = 0; i < bookCount; i++)
+            for (int currentBook = 0; currentBook < bookCount; currentBook++)
             {
-                string[] bookTokens = booksInput[i].Split();
+                string[] bookTokens = booksInput[currentBook].Split();
 
                 int edition = int.Parse(bookTokens[0]);
                 DateTime releaseDate = DateTime.ParseExact(bookTokens[1], "d/M/yyyy", CultureInfo.InvariantCulture);
@@ -233,8 +233,8 @@ namespace BookShop.Initializer.Generators
                 decimal price = decimal.Parse(bookTokens[3]);
                 int ageRestriction = int.Parse(bookTokens[4]);
                 string title = String.Join(" ", bookTokens, 5, bookTokens.Length - 5);
-                Category category = categories[i / 10];
-                Author author = authors[i / 5];
+                Category category = categories[currentBook / 10];
+                Author author = authors[currentBook / 5];
 
                 Book book = new Book()
                 {
@@ -248,7 +248,7 @@ namespace BookShop.Initializer.Generators
                     Author = author,
                 };
 
-                BookCategory bookCategory = new BookCategory()
+                BookCategory bookCategory = new BookCategory
                 {
                     Category = category,
                     Book = book
@@ -256,7 +256,7 @@ namespace BookShop.Initializer.Generators
 
                 book.BookCategories.Add(bookCategory);
 
-                books[i] = book;
+                books[currentBook] = book;
             }
 
             return books;

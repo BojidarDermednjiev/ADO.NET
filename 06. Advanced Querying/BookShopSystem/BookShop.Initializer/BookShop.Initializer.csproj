@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\BookShop.Common\BookShop.Common.csproj" />
+    <ProjectReference Include="..\BookShop.Data\BookShop.Data.csproj" />
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
     <ProjectReference Include="..\BookShop.Models\BookShop.Models.csproj" />
     <ProjectReference Include="..\BookShopData\BookShopData.csproj" />
   </ItemGroup>

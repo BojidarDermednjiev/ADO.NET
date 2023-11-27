@@ -53,9 +53,15 @@
 
             Author[] authors = new Author[authorCount];
 
+<<<<<<< HEAD
             for (int i = 0; i < authorCount; i++)
             {
                 string[] authorNameTokens = authorNames[i].Split();
+=======
+            for (int currentAuthor = 0; currentAuthor < authorCount; currentAuthor++)
+            {
+                string[] authorNameTokens = authorNames[currentAuthor].Split();
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
 
                 Author author = new Author()
                 {
@@ -63,7 +69,11 @@
                     LastName = authorNameTokens[1],
                 };
 
+<<<<<<< HEAD
                 authors[i] = author;
+=======
+                authors[currentAuthor] = author;
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
             }
 
             return authors;

@@ -1,6 +1,6 @@
 ﻿namespace BookShop.Initializer.Generators
 {
-    using BookShop.Models;
+    using Models;
 
     internal class AuthorGenerator
     {
@@ -53,9 +53,9 @@
 
             Author[] authors = new Author[authorCount];
 
-            for (int i = 0; i < authorCount; i++)
+            for (int currentAuthor = 0; currentAuthor < authorCount; currentAuthor++)
             {
-                string[] authorNameTokens = authorNames[i].Split();
+                string[] authorNameTokens = authorNames[currentAuthor].Split();
 
                 Author author = new Author()
                 {
@@ -63,7 +63,7 @@
                     LastName = authorNameTokens[1],
                 };
 
-                authors[i] = author;
+                authors[currentAuthor] = author;
             }
 
             return authors;

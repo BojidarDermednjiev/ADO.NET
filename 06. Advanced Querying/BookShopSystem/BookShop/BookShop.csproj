@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\BookShop.Data\BookShop.Data.csproj" />
+>>>>>>> 796d2338fed3e69138270bd71d1499939436062a
     <ProjectReference Include="..\BookShop.Initializer\BookShop.Initializer.csproj" />
   </ItemGroup>
 

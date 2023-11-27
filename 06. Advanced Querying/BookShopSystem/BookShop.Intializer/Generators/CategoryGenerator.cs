@@ -1,6 +1,6 @@
 ﻿namespace BookShop.Initializer.Generators
 {
-    using BookShop.Models;
+    using Models;
 
     internal class CategoryGenerator
     {
@@ -33,14 +33,14 @@
 
             Category[] categories = new Category[categoryCount];
 
-            for (int i = 0; i < categoryCount; i++)
+            for (int currentCategory = 0; currentCategory < categoryCount; currentCategory++)
             {
                 Category category = new Category()
                 {
-                    Name = categoryNames[i],
+                    Name = categoryNames[currentCategory],
                 };
 
-                categories[i] = category;
+                categories[currentCategory] = category;
             }
 
             return categories;
